@@ -5,7 +5,7 @@ import { useMemo, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import SectionTitle from "@components/section-title";
-import OrdinalCard from "@components/ordinal-media-card";
+import OrdinalMediaCard from "@components/ordinal-media-card";
 import { toast } from "react-toastify";
 import Image from "next/image";
 import {
@@ -126,8 +126,7 @@ const WalletArea = ({
 
 			try {
 				utxosWithInscriptionData = await getInscriptions(nostrOrdinalsAddress);
-				console.log("utxosWithInscriptionData", utxosWithInscriptionData)
-
+ 
 				if (displayOnlyInscriptions) {
 					utxosWithInscriptionData = utxosWithInscriptionData.filter(
 						(utxo) => !!utxo.inscriptionId,
@@ -170,27 +169,7 @@ const WalletArea = ({
 								{...{ title: "Your Media Collection" }}
 								isLoading={!utxosReady}
 							/>
-							{/* {!!balance && (
-								<span className="balance-info">
-									<span className="price">
-										${satsToFormattedDollarString(balance, bitcoinPrice)}
-									</span>
-								</span>
-							)} */}
-							{sendBulkSupported && selectedUtxos.length > 0 && (
-								<div className="mx-3">
-									<button
-										className="pd-react-area btn-transparent"
-										type="button"
-										onClick={handleSendModal}
-									>
-										<div className="action">
-											<i className="feather-send" />
-											<span>Send Bulk</span>
-										</div>
-									</button>
-								</div>
-							)}
+							
 						</div>
 
 						<br />
@@ -212,23 +191,6 @@ const WalletArea = ({
 								{shortenStr(nostrOrdinalsAddress)}
 							</button>
 
-							<div className="form-check mt-2">
-								<input
-									className="form-check-input"
-									type="checkbox"
-									id={"checkbox-select-all"}
-									checked={selectedUtxos.length === filteredOwnedUtxos.length && selectedUtxos.length > 0}
-									onChange={(e) =>
-										setSelectedUtxos(e.target.checked ? filteredOwnedUtxos : [])
-									}
-								/>
-								<label
-									className="form-check-label"
-									htmlFor={"checkbox-select-all"}
-								>
-									Select for sending
-								</label>
-							</div>
 						</span>
 					</div>
 				</div>
@@ -241,7 +203,7 @@ const WalletArea = ({
 									key={inscription.key}
 									className="col-5 col-lg-4 col-md-6 col-sm-6 col-12"
 								>
-									<OrdinalCard
+									<OrdinalMediaCard
 										overlay
 										price={{
 											amount: inscription.value.toLocaleString("en-US"),
@@ -254,27 +216,7 @@ const WalletArea = ({
 										utxo={inscription}
 										onSale={handleRefreshHack}
 									/>
-									{sendBulkSupported && (
-										<div className="form-check mt-2">
-											<input
-												className="form-check-input"
-												type="checkbox"
-												id={`checkbox-${inscription.key}`}
-												checked={selectedUtxos.some(
-													(selected) => (inscription.key && selected.key === inscription.key),
-												)}
-												onChange={(e) =>
-													handleUtxoSelection(inscription, e.target.checked)
-												}
-											/>
-											<label
-												className="form-check-label"
-												htmlFor={`checkbox-${inscription.key}`}
-											>
-												Select for sending
-											</label>
-										</div>
-									)}
+									
 								</div>
 							))}
 							{filteredOwnedUtxos.length === 0 && (
@@ -298,24 +240,14 @@ const WalletArea = ({
 						<Slider options={SliderOptions} className="slick-gutter-15">
 							{[...Array(5)].map((_, index) => (
 								<SliderItem key={index} className="ordinal-slide">
-									<OrdinalCard overlay />
+									<OrdinalMediaCard overlay />
 								</SliderItem>
 							))}
 						</Slider>
 					)}
 				</div>
 			</div>
-			{showSendModal && (
-				<SendBulkModal
-					ownedUtxos={ownedUtxos}
-					selectedUtxos={selectedUtxos}
-					show={showSendModal}
-					handleModal={handleSendModal}
-					utxo={""}
-					isUninscribed={false}
-					onSend={onSend}
-				/>
-			)}
+		
 		</div>
 	);
 };
