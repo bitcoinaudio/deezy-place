@@ -26,7 +26,7 @@ const App = () => {
   return (
     <WalletContext.Provider value={walletState}>
       <Wrapper>
-        <SEO pageTitle="Deezy" />
+        <SEO pageTitle="" />
         <Header ref={elementRef} />
         <main id="main-content" style={{ paddingTop: headerHeight }}>
           <NostrLiveAll openOrders={openOrders} loading={loading} />

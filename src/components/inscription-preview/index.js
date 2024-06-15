@@ -1,7 +1,9 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { isImageInscription, ORDINALS_EXPLORER_URL } from "@services/nosft";
+import { isImageInscription } from "@services/nosft";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+
+let ORDINALS_EXPLORER_URL = "https://radinals.bitcoinaudio.co";
 
 export const InscriptionPreview = ({ utxo }) => {
     const [loading, setLoading] = useState(true);

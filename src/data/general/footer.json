@@ -7,20 +7,20 @@
                 "alt": "logo"
             }
         ],
-        "text": "Launch your own collection in collaboration with Deezy."
+        "text": ""
     },
     "quicklink-widget": {
-        "title": "Deezy Marketplace",
+        "title": "Bitcoin Audio Marketplace",
         "menu": [
             {
                 "id": 1,
-                "text": "Astral Babes",
-                "path": "https://astralbabes.ai/"
+                "text": "Bitcoin Audio",
+                "path": "https://bitcoinaudio.co/"
             },
             {
                 "id": 2,
-                "text": "About",
-                "path": "https://github.com/dannydeezy/nosft"
+                "text": "Bitcoin Audio Explorers",
+                "path": "https://bitcoinaudio.co/bitcoin-audio-explorers/"
             }
         ]
     }

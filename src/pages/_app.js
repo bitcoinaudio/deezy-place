@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps }) => {
   });
   return (
     <ThemeProvider defaultTheme="dark">
-      <GoogleAnalytics trackPageViews />
+      {/* <GoogleAnalytics trackPageViews /> */}
       <Component {...pageProps} />
     </ThemeProvider>
   );

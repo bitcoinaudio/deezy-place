@@ -12,6 +12,12 @@ export default function (inscriborLink) {
       private: true,
     },
     {
+      id: 2,
+      text: "Media",
+      path: "/media",
+      private: true,
+    },
+    {
       id: 3,
       text: "Marketplace",
       path: "/marketplace",

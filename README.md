@@ -9,7 +9,7 @@ Use node > 17
 ## to run locally:
 
 ```
-git clone https://github.com/dannydeezy/nosft.git
+git clone https://github.com/deezy-inc/deezy-place.git
 cd nosft
 npm install
 npm run dev

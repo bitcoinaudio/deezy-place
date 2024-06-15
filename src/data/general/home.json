@@ -12,7 +12,7 @@
             "texts": [
                 {
                     "id": 1,
-                    "content": "The Deezy Marketplace is fully open source with a decentralized PSBT based order book."
+                    "content": "The Bitcoin Audio Marketplace is fully open source with a decentralized PSBT based order book. Built by Deezy. Mods by Rad"
                 }
             ],
             "buttons": [
@@ -30,7 +30,7 @@
             ],
             "images": [
                 {
-                    "src": "/images/slider/bitcoinfrog.webp"
+                    "src": "/images/slider/bitcoinaudio.svg"
                 }
             ]
         },

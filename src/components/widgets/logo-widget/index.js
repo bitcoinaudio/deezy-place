@@ -6,12 +6,12 @@ const LogoWidget = ({ data }) => (
     <div className="footer-left">
         <Logo logo={data.logo} path="https://deezy.io" />
         {/* {data?.text && <p className="rn-footer-describe">{data.text}</p>} */}
-        <div className="rn-footer-describe">
-            Launch your own collection in collaboration with{" "}
+        {/* <div className="rn-footer-describe">
+            Launch your own music collection in collaboration with{" "}
             <Anchor path="https://deezy.io" target="_blank">
-                Deezy
+                Bitcoin
             </Anchor>
-        </div>
+        </div> */}
     </div>
 );
 

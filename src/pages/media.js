@@ -8,7 +8,7 @@ import SEO from "@components/seo";
 
 import { useWalletState, useHeaderHeight } from "@hooks";
 import { WalletContext } from "@context/wallet-context";
-import WalletArea from "@containers/WalletArea";
+import WalletMediaArea from "@containers/WalletMediaArea";
 
 export async function getStaticProps() {
   return { props: { className: "template-color-1" } };
@@ -26,7 +26,7 @@ const App = () => {
         <Header ref={elementRef} />
         <main id="main-content" style={{ paddingTop: headerHeight }}>
           {ordinalsPublicKey && nostrOrdinalsAddress ? (
-            <WalletArea />
+            <WalletMediaArea />
           ) : (
             <>Please connect your wallet.</>
           )}

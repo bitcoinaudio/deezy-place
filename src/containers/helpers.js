@@ -33,8 +33,10 @@ const sortWithInscriptionId = (utxos, sortFunction) => {
   utxos.forEach((utxo) => {
     if (utxo.inscriptionId) {
       withInscriptionId.push(utxo);
+      console.log(utxo)
     } else {
       withoutInscriptionId.push(utxo);
+
     }
   });
 
