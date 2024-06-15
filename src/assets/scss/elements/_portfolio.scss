@@ -124,6 +124,14 @@
     }
   }
 
+  .media-card {
+    height: 560px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;   
+    margin: -15px;
+  }
+
   .card-thumbnail {
     overflow: hidden;
     border-radius: 5px;
