@@ -22,7 +22,7 @@ export const PreviewTransactionStep = ({ txFee, txFeeRate, hexPsbt, metadata, to
                 onClick={txFee ? send : sign}
                 disabled={isSending || !btcTreeReady}
             >
-                {isSending ? <TailSpin stroke="#fec823" speed={0.75} /> : txFee ? "Send" : "Sign"}
+                {isSending ? <TailSpin stroke="#F0D800" speed={0.75} /> : txFee ? "Send" : "Sign"}
             </Button>
         </div>
 

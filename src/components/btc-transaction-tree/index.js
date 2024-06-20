@@ -221,7 +221,7 @@ const BtcTransactionTree = ({ hexPsbt, metadata, toggleBtcTreeReady }) => {
 
     return (
         <div style={{ width: '100%', height: '100%', overflowX: 'auto', overflowY: 'auto', position: 'relative' }}>
-            {loading && <TailSpin stroke="#fec823" speed={0.75} />}
+            {loading && <TailSpin stroke="#F0D800" speed={0.75} />}
             <svg ref={svgRef}></svg>
         </div>
     );

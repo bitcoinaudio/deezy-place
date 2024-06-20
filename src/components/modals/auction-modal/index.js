@@ -789,7 +789,7 @@ const AuctionModal = ({ show, handleModal, utxo, onSale, isSpent }) => {
               className={isOnSale ? "btn-loading" : ""}
               onClick={submit}
             >
-              {isOnSale ? <TailSpin stroke="#fec823" speed={0.75} /> : action}
+              {isOnSale ? <TailSpin stroke="#F0D800" speed={0.75} /> : action}
             </Button>
           </div>
         </div>

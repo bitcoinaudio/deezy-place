@@ -58,7 +58,7 @@ const BidList = ({ bids, onTakeBid, isOnAcceptBid, shouldShowTakeBid }) => {
         <span>Buyer</span>
         <span>Time</span>
       </div>
-      {bids.length === 0 && <TailSpin stroke="#fec823" speed={0.75} />}
+      {bids.length === 0 && <TailSpin stroke="#F0D800" speed={0.75} />}
       {bids.map((bid, index) => (
         <Bid
           key={bid.nostr.id}

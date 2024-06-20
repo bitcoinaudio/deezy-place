@@ -256,7 +256,7 @@ const BuyLightningModal = ({ show, handleModal, utxo, onSale, nostr }) => {
               className={isOnBuy ? "btn-loading" : ""}
               onClick={submit}
             >
-              {isOnBuy ? <TailSpin stroke="#fec823" speed={0.75} /> : "Buy"}
+              {isOnBuy ? <TailSpin stroke="#F0D800" speed={0.75} /> : "Buy"}
             </Button>
           </div> */}
         </div>

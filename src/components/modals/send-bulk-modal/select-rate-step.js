@@ -83,7 +83,7 @@ export const SelectRateStep = ({ destinationBtcAddress, isBtcInputAddressValid, 
                     className={isSending ? "btn-loading" : ""}
                     onClick={preparePsbt}
                 >
-                    {isSending ? <TailSpin stroke="#fec823" speed={0.75} /> : "Prepare Tx"}
+                    {isSending ? <TailSpin stroke="#F0D800" speed={0.75} /> : "Prepare Tx"}
                 </Button>
             </div>
         </div>
