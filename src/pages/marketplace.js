@@ -29,7 +29,7 @@ const App = () => {
         <SEO pageTitle="" />
         <Header ref={elementRef} />
         <main id="main-content" style={{ paddingTop: headerHeight }}>
-          <NostrLiveAll openOrders={openOrders} loading={loading} />
+          {/* <NostrLiveAll openOrders={openOrders} loading={loading} /> */}
         </main>
 
         <Footer />
