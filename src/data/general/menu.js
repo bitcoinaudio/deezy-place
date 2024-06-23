@@ -22,11 +22,11 @@ export default function (inscriborLink) {
       text: "Marketplace",
       path: "/marketplace",
     },
-    {
-      id: 4,
-      text: "Auctions",
-      path: "/auction",
-    },
+    // {
+    //   id: 4,
+    //   text: "Auctions",
+    //   path: "/auction",
+    // },
     {
       id: 5,
       text: "Inscribe",
