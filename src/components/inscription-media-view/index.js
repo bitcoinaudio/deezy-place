@@ -6,6 +6,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 
 
 let ORDINALS_EXPLORER_URL = "https://radinals.bitcoinaudio.co";
+// let ORDINALS_EXPLORER_URL = "http://localhost";
  
 export const InscriptionPreview = ({ utxo }) => {
     const [loading, setLoading] = useState(true);
